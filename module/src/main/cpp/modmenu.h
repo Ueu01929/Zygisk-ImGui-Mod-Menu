@@ -7,7 +7,6 @@
 #include <sys/system_properties.h>
 
 #include "KittyMemory/MemoryPatch.h"
-#include "Includes/ESP.h"
 #include "Includes/Dobby/dobby.h"
 #include "Includes/Utils.h"
 #include "Includes/ImGui.h"
