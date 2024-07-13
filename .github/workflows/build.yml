@@ -1,4 +1,4 @@
-name: Build
+name: Build Mod Menu
 on:
   workflow_dispatch:
 
@@ -14,8 +14,8 @@ jobs:
         cache: gradle
     - run: |
         chmod +x ./gradlew
-        ./gradlew :module:assembleRelease
+        ./gradlew assembleRelease
     - uses: actions/upload-artifact@v3
       with:
-        name: zygisk-imgui-Chris
-        path: out/magisk_module_release/
+        name: mod-menu-artifact
+        path: path/to/your/mod-menu/build/output/directory
